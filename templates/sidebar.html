@@ -1,0 +1,26 @@
+<div class="social">
+ <h3>Social</h3>
+ <ul>
+  {% for name, link in SOCIAL %}
+   <li><a href="{{ link }}">{{ name }}</a></li>
+  {% endfor %}
+ </ul>
+</div>
+
+<h3>Blogroll</h3>
+<ul>
+ {% for name, link in LINKS %}
+  <li><a href="{{ link }}">{{ name }}</a></li>
+ {% endfor %}
+</ul>
+
+<h3>Presentations</h3>
+<ul>
+ {% for name, link in PRESOS %}
+ <li><a href="{{ link }}">{{ name }}</a></li>
+ {% endfor %}
+</ul>
+
+<h3>Tags</h3>
+{% include "tags.html"%}
+
